@@ -1,0 +1,17 @@
+﻿@model SocialNetwork.Models.User
+
+@{
+    ViewBag.Title = "Profile";
+}
+
+<h2>Profile</h2>
+
+<h2>@Model._name</h2>
+<h2>@Model._email</h2>
+@foreach (string s in @Model.GetAllTerms()) { 
+
+    <p>@s</p>
+
+}
+
+@Html.ActionLink("Mudar as preferências", "ChangeTerms", "Home", new {id= @Model._id}, null);

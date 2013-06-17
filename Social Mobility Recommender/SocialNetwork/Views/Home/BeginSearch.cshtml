@@ -1,0 +1,24 @@
+﻿@model IEnumerable<string>
+
+@{
+    ViewBag.Title = "BeginSearch";
+}
+<h2>Faça outra pesquisa</h2>
+@using (Html.BeginForm("BeginSearch", "Home"))
+{
+    <input type="text" id="txt", name="term" />          
+    
+}
+
+<h2>Resultados</h2>
+@if(@ViewData["list"]!=null){
+foreach(string item in (@ViewData["list"]as IEnumerable<string>)){
+    
+    <li>
+        <a href="@item">"@item"</a>
+    </li>
+}}
+@if(@ViewData["list"]==null){
+<p>Não foram encontrados nenhuns resultados com essa combinação de palavras</p>
+}
+

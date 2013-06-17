@@ -1,0 +1,49 @@
+C:\Users\Vitor\Desktop\projecto\SocialMobilityRecommender\LuceneController\bin\Debug\LuceneController.exe.config
+C:\Users\Vitor\Desktop\projecto\SocialMobilityRecommender\LuceneController\bin\Debug\LuceneController.exe
+C:\Users\Vitor\Desktop\projecto\SocialMobilityRecommender\LuceneController\bin\Debug\LuceneController.pdb
+C:\Users\Vitor\Desktop\projecto\SocialMobilityRecommender\LuceneController\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Vitor\Desktop\projecto\SocialMobilityRecommender\LuceneController\bin\Debug\Lucene.Net.dll
+C:\Users\Vitor\Desktop\projecto\SocialMobilityRecommender\LuceneController\bin\Debug\Lucene.Net.pdb
+C:\Users\Vitor\Desktop\projecto\SocialMobilityRecommender\LuceneController\bin\Debug\Lucene.Net.xml
+C:\Users\Vitor\Desktop\projecto\SocialMobilityRecommender\LuceneController\obj\Debug\LuceneController.exe
+C:\Users\Vitor\Desktop\projecto\SocialMobilityRecommender\LuceneController\obj\Debug\LuceneController.pdb
+C:\Users\Vitor\Desktop\projecto\SocialMobilityRecommender\LuceneController\obj\Debug\LuceneController.csprojResolveAssemblyReference.cache
+C:\Users\Pedro\Dropbox\Projecto\SocialMobilityRecommender\LuceneController\bin\Debug\LuceneController.exe.config
+C:\Users\Pedro\Dropbox\Projecto\SocialMobilityRecommender\LuceneController\obj\Debug\LuceneController.exe
+C:\Users\Pedro\Dropbox\Projecto\SocialMobilityRecommender\LuceneController\obj\Debug\LuceneController.pdb
+C:\Users\Vitor\Dropbox\Projecto\SocialMobilityRecommender\LuceneController\bin\Debug\LuceneController.exe.config
+C:\Users\Vitor\Dropbox\Projecto\SocialMobilityRecommender\LuceneController\bin\Debug\LuceneController.exe
+C:\Users\Vitor\Dropbox\Projecto\SocialMobilityRecommender\LuceneController\bin\Debug\LuceneController.pdb
+C:\Users\Vitor\Dropbox\Projecto\SocialMobilityRecommender\LuceneController\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Vitor\Dropbox\Projecto\SocialMobilityRecommender\LuceneController\bin\Debug\Lucene.Net.dll
+C:\Users\Vitor\Dropbox\Projecto\SocialMobilityRecommender\LuceneController\bin\Debug\Lucene.Net.pdb
+C:\Users\Vitor\Dropbox\Projecto\SocialMobilityRecommender\LuceneController\bin\Debug\Lucene.Net.xml
+C:\Users\Vitor\Dropbox\Projecto\SocialMobilityRecommender\LuceneController\obj\Debug\LuceneController.exe
+C:\Users\Vitor\Dropbox\Projecto\SocialMobilityRecommender\LuceneController\obj\Debug\LuceneController.pdb
+C:\Users\Vitor\Desktop\SocialMobilityRecommender\LuceneController\bin\Debug\LuceneController.exe.config
+C:\Users\Vitor\Desktop\SocialMobilityRecommender\LuceneController\bin\Debug\LuceneController.exe
+C:\Users\Vitor\Desktop\SocialMobilityRecommender\LuceneController\bin\Debug\LuceneController.pdb
+C:\Users\Vitor\Desktop\SocialMobilityRecommender\LuceneController\bin\Debug\Lucene.Net.dll
+C:\Users\Vitor\Desktop\SocialMobilityRecommender\LuceneController\bin\Debug\Lucene.Net.pdb
+C:\Users\Vitor\Desktop\SocialMobilityRecommender\LuceneController\bin\Debug\Lucene.Net.xml
+C:\Users\Vitor\Desktop\SocialMobilityRecommender\LuceneController\obj\Debug\LuceneController.exe
+C:\Users\Vitor\Desktop\SocialMobilityRecommender\LuceneController\obj\Debug\LuceneController.pdb
+C:\Users\Vitor\Desktop\lucene+abot\LuceneController\bin\Debug\LuceneController.exe.config
+C:\Users\Vitor\Desktop\lucene+abot\LuceneController\bin\Debug\LuceneController.exe
+C:\Users\Vitor\Desktop\lucene+abot\LuceneController\bin\Debug\LuceneController.pdb
+C:\Users\Vitor\Desktop\lucene+abot\LuceneController\obj\Debug\LuceneController.csprojResolveAssemblyReference.cache
+C:\Users\Vitor\Desktop\lucene+abot\LuceneController\obj\Debug\LuceneController.exe
+C:\Users\Vitor\Desktop\lucene+abot\LuceneController\obj\Debug\LuceneController.pdb
+C:\Users\Vitor\Desktop\lucene+abot\LuceneController\bin\Debug\Lucene.Net.dll
+C:\Users\Vitor\Dropbox\Projecto\lucene+abot\LuceneController\bin\Debug\LuceneController.exe.config
+C:\Users\Vitor\Dropbox\Projecto\lucene+abot\LuceneController\bin\Debug\LuceneController.exe
+C:\Users\Vitor\Dropbox\Projecto\lucene+abot\LuceneController\bin\Debug\LuceneController.pdb
+C:\Users\Vitor\Dropbox\Projecto\lucene+abot\LuceneController\bin\Debug\Lucene.Net.dll
+C:\Users\Vitor\Dropbox\Projecto\lucene+abot\LuceneController\obj\Debug\LuceneController.exe
+C:\Users\Vitor\Dropbox\Projecto\lucene+abot\LuceneController\obj\Debug\LuceneController.pdb
+C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\LuceneController\bin\Debug\LuceneController.exe.config
+C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\LuceneController\bin\Debug\LuceneController.exe
+C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\LuceneController\bin\Debug\LuceneController.pdb
+C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\LuceneController\bin\Debug\Lucene.Net.dll
+C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\LuceneController\obj\Debug\LuceneController.exe
+C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\LuceneController\obj\Debug\LuceneController.pdb

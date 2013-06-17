@@ -1,0 +1,14 @@
+﻿@model SocialNetwork.Models.User
+
+@{
+    ViewBag.Title = "ChangeTerms";
+}
+
+<h2>Insira os termos do utilizador</h2>
+
+@using (Html.BeginForm("ChangeTerms", "Home", new {id= @Model._id}, FormMethod.Post))
+{
+    <input type="text" id="terms", name="terms" />          
+    
+}
+

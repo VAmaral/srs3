@@ -1,0 +1,16 @@
+C:\Users\Vitor\Desktop\projecto\SocialMobilityRecommender\SocialMobilityRecommender\bin\Debug\SocialMobilityRecommender.exe.config
+C:\Users\Vitor\Desktop\projecto\SocialMobilityRecommender\SocialMobilityRecommender\bin\Debug\SocialMobilityRecommender.exe
+C:\Users\Vitor\Desktop\projecto\SocialMobilityRecommender\SocialMobilityRecommender\bin\Debug\SocialMobilityRecommender.pdb
+C:\Users\Vitor\Desktop\projecto\SocialMobilityRecommender\SocialMobilityRecommender\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Vitor\Desktop\projecto\SocialMobilityRecommender\SocialMobilityRecommender\bin\Debug\Lucene.Net.dll
+C:\Users\Vitor\Desktop\projecto\SocialMobilityRecommender\SocialMobilityRecommender\bin\Debug\Lucene.Net.pdb
+C:\Users\Vitor\Desktop\projecto\SocialMobilityRecommender\SocialMobilityRecommender\bin\Debug\Lucene.Net.xml
+C:\Users\Vitor\Desktop\projecto\SocialMobilityRecommender\SocialMobilityRecommender\obj\Debug\SocialMobilityRecommender.exe
+C:\Users\Vitor\Desktop\projecto\SocialMobilityRecommender\SocialMobilityRecommender\obj\Debug\SocialMobilityRecommender.pdb
+C:\Users\Vitor\Desktop\projecto\SocialMobilityRecommender\SocialMobilityRecommender\obj\Debug\SocialMobilityRecommender.csprojResolveAssemblyReference.cache
+C:\Users\Vitor\Dropbox\Projecto\SocialMobilityRecommender\SocialMobilityRecommender\bin\Debug\SocialMobilityRecommender.exe.config
+C:\Users\Vitor\Dropbox\Projecto\SocialMobilityRecommender\SocialMobilityRecommender\bin\Debug\SocialMobilityRecommender.exe
+C:\Users\Vitor\Dropbox\Projecto\SocialMobilityRecommender\SocialMobilityRecommender\bin\Debug\SocialMobilityRecommender.pdb
+C:\Users\Vitor\Dropbox\Projecto\SocialMobilityRecommender\SocialMobilityRecommender\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Vitor\Dropbox\Projecto\SocialMobilityRecommender\SocialMobilityRecommender\obj\Debug\SocialMobilityRecommender.exe
+C:\Users\Vitor\Dropbox\Projecto\SocialMobilityRecommender\SocialMobilityRecommender\obj\Debug\SocialMobilityRecommender.pdb

@@ -1,0 +1,46 @@
+c:\users\pedro\documents\visual studio 2012\Projects\AbotCrawler\AbotCrawler\bin\Debug\AbotCrawler.exe.config
+C:\Users\Pedro\documents\visual studio 2012\Projects\AbotCrawler\AbotCrawler\obj\Debug\AbotCrawler.csprojResolveAssemblyReference.cache
+C:\Users\Pedro\documents\visual studio 2012\Projects\AbotCrawler\AbotCrawler\bin\Debug\AbotCrawler.exe
+C:\Users\Pedro\documents\visual studio 2012\Projects\AbotCrawler\AbotCrawler\bin\Debug\AbotCrawler.pdb
+C:\Users\Pedro\documents\visual studio 2012\Projects\AbotCrawler\AbotCrawler\bin\Debug\Abot.dll
+C:\Users\Pedro\documents\visual studio 2012\Projects\AbotCrawler\AbotCrawler\bin\Debug\AutoMapper.dll
+C:\Users\Pedro\documents\visual studio 2012\Projects\AbotCrawler\AbotCrawler\bin\Debug\CsQuery.dll
+C:\Users\Pedro\documents\visual studio 2012\Projects\AbotCrawler\AbotCrawler\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Pedro\documents\visual studio 2012\Projects\AbotCrawler\AbotCrawler\bin\Debug\log4net.dll
+C:\Users\Pedro\documents\visual studio 2012\Projects\AbotCrawler\AbotCrawler\bin\Debug\Robots.dll
+C:\Users\Pedro\documents\visual studio 2012\Projects\AbotCrawler\AbotCrawler\bin\Debug\Abot.pdb
+C:\Users\Pedro\documents\visual studio 2012\Projects\AbotCrawler\AbotCrawler\obj\Debug\AbotCrawler.exe
+C:\Users\Pedro\documents\visual studio 2012\Projects\AbotCrawler\AbotCrawler\obj\Debug\AbotCrawler.pdb
+C:\Pastas Pessoais\Pedro\ISEL\Projecto\Crawler\AbotCrawler\AbotCrawler\bin\Debug\AbotCrawler.exe.config
+C:\Users\Vitor\Desktop\SocialMobilityRecommender\AbotCrawler\bin\Debug\AbotCrawler.exe.config
+C:\Users\Vitor\Desktop\SocialMobilityRecommender\AbotCrawler\bin\Debug\AbotCrawler.exe
+C:\Users\Vitor\Desktop\SocialMobilityRecommender\AbotCrawler\bin\Debug\AbotCrawler.pdb
+C:\Users\Vitor\Desktop\SocialMobilityRecommender\AbotCrawler\obj\Debug\AbotCrawler.exe
+C:\Users\Vitor\Desktop\SocialMobilityRecommender\AbotCrawler\obj\Debug\AbotCrawler.pdb
+C:\Users\Vitor\Desktop\lucene+abot\AbotCrawler\bin\Debug\AbotCrawler.exe.config
+C:\Users\Vitor\Desktop\lucene+abot\AbotCrawler\bin\Debug\AbotCrawler.exe
+C:\Users\Vitor\Desktop\lucene+abot\AbotCrawler\bin\Debug\AbotCrawler.pdb
+C:\Users\Vitor\Desktop\lucene+abot\AbotCrawler\obj\Debug\AbotCrawler.exe
+C:\Users\Vitor\Desktop\lucene+abot\AbotCrawler\obj\Debug\AbotCrawler.pdb
+C:\Users\Vitor\Dropbox\Projecto\lucene+abot\AbotCrawler\bin\Debug\AbotCrawler.exe.config
+C:\Users\Vitor\Dropbox\Projecto\lucene+abot\AbotCrawler\bin\Debug\AbotCrawler.exe
+C:\Users\Vitor\Dropbox\Projecto\lucene+abot\AbotCrawler\bin\Debug\AbotCrawler.pdb
+C:\Users\Vitor\Dropbox\Projecto\lucene+abot\AbotCrawler\bin\Debug\Abot.dll
+C:\Users\Vitor\Dropbox\Projecto\lucene+abot\AbotCrawler\bin\Debug\AutoMapper.dll
+C:\Users\Vitor\Dropbox\Projecto\lucene+abot\AbotCrawler\bin\Debug\CsQuery.dll
+C:\Users\Vitor\Dropbox\Projecto\lucene+abot\AbotCrawler\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Vitor\Dropbox\Projecto\lucene+abot\AbotCrawler\bin\Debug\log4net.dll
+C:\Users\Vitor\Dropbox\Projecto\lucene+abot\AbotCrawler\bin\Debug\Robots.dll
+C:\Users\Vitor\Dropbox\Projecto\lucene+abot\AbotCrawler\obj\Debug\AbotCrawler.exe
+C:\Users\Vitor\Dropbox\Projecto\lucene+abot\AbotCrawler\obj\Debug\AbotCrawler.pdb
+C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\AbotCrawler\bin\Debug\AbotCrawler.exe.config
+C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\AbotCrawler\bin\Debug\AbotCrawler.exe
+C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\AbotCrawler\bin\Debug\AbotCrawler.pdb
+C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\AbotCrawler\bin\Debug\Abot.dll
+C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\AbotCrawler\bin\Debug\AutoMapper.dll
+C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\AbotCrawler\bin\Debug\CsQuery.dll
+C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\AbotCrawler\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\AbotCrawler\bin\Debug\log4net.dll
+C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\AbotCrawler\bin\Debug\Robots.dll
+C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\AbotCrawler\obj\Debug\AbotCrawler.exe
+C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\AbotCrawler\obj\Debug\AbotCrawler.pdb

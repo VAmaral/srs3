@@ -1,0 +1,25 @@
+﻿@model Dictionary<string, LinkedList<string>>
+@{
+    ViewBag.Title = "SendMail Confirmation";
+}
+
+@{
+    try {
+        WebMail.SmtpServer = "smtp.gmail.com";
+        WebMail.SmtpPort = 587;
+        WebMail.EnableSsl = true;
+        WebMail.UserName = "ProgramacaoNaInternet@gmail.com";
+        WebMail.Password = "HttpStateless";
+        WebMail.From = "ProgramacaoNaInternet@gmail.com";
+        WebMail.Send(@Model.Keys.First<string>(), " Social Mobility Recommender: New urls for you to explore", 
+            "<a href=" + @Model[@Model.Keys.First<string>()].ElementAt<string>(0) + ">" + @Model[@Model.Keys.First<string>()].ElementAt<string>(0)+"</a>"
+            
+            );
+    } catch (Exception) {
+        @:<b>Sorry  we couldn't send the email to confirm your Register</b>
+    }
+}
+
+@Html.ActionLink("Back Home", "Index")
+
+<h2>SendMail</h2>
