@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using SocialNetwork.Models;
 using HtmlAgilityPack;
+using System.Threading;
 
 
 
@@ -21,9 +22,12 @@ namespace SocialNetwork.Controllers
 
         public ActionResult SimulateTotal() {
 
-            Dictionary<string, HtmlNode> crawled = AbotCrawler.Crawler.RunToLucene();
-            LuceneController.LuceneUsage.TreatMultiUrl(crawled);
-            ControlModule.PeriodicMaintenance();
+            Thread background = new Thread(() => {
+                Dictionary<string, HtmlNode> crawled = AbotCrawler.Crawler.RunToLucene();
+                LuceneController.LuceneUsage.TreatMultiUrl(crawled);
+                ControlModule.PeriodicMaintenance();
+            });
+            background.Start();           
             return RedirectToAction("Index");
         }
 
