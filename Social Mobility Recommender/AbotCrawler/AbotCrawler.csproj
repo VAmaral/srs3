@@ -32,28 +32,29 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Abot">
-      <HintPath>..\..\..\..\..\..\..\Pastas Pessoais\Pedro\ISEL\Projecto\Abotv1.1_Bin\Abot.dll</HintPath>
+    <Reference Include="Abot, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Abot.dll</HintPath>
     </Reference>
     <Reference Include="AutoMapper, Version=2.2.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Documents\GitHub\SRS\Social Recommender System 0.5.0\AbotCrawler\AutoMapper.dll</HintPath>
+      <HintPath>.\AutoMapper.dll</HintPath>
     </Reference>
     <Reference Include="CsQuery, Version=1.3.3.249, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Documents\GitHub\SRS\Social Recommender System 0.5.0\AbotCrawler\CsQuery.dll</HintPath>
+      <HintPath>.\CsQuery.dll</HintPath>
     </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.4.7.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Documents\GitHub\SRS\Social Recommender System 0.5.0\AbotCrawler\HtmlAgilityPack.dll</HintPath>
+      <HintPath>.\HtmlAgilityPack.dll</HintPath>
     </Reference>
     <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Documents\GitHub\SRS\Social Recommender System 0.5.0\AbotCrawler\log4net.dll</HintPath>
+      <HintPath>.\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Robots, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Documents\GitHub\SRS\Social Recommender System 0.5.0\AbotCrawler\Robots.dll</HintPath>
+      <HintPath>.\Robots.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
