@@ -44,3 +44,14 @@ C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\AbotCrawler\bin\De
 C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\AbotCrawler\bin\Debug\Robots.dll
 C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\AbotCrawler\obj\Debug\AbotCrawler.exe
 C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\AbotCrawler\obj\Debug\AbotCrawler.pdb
+C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\AbotCrawler\bin\Debug\AbotCrawler.exe.config
+C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\AbotCrawler\bin\Debug\AbotCrawler.exe
+C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\AbotCrawler\bin\Debug\AbotCrawler.pdb
+C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\AbotCrawler\bin\Debug\Abot.dll
+C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\AbotCrawler\bin\Debug\AutoMapper.dll
+C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\AbotCrawler\bin\Debug\CsQuery.dll
+C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\AbotCrawler\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\AbotCrawler\bin\Debug\log4net.dll
+C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\AbotCrawler\bin\Debug\Robots.dll
+C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\AbotCrawler\obj\Debug\AbotCrawler.exe
+C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\AbotCrawler\obj\Debug\AbotCrawler.pdb

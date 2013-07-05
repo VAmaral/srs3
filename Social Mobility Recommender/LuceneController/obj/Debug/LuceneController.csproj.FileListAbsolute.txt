@@ -47,3 +47,10 @@ C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\LuceneController\b
 C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\LuceneController\bin\Debug\Lucene.Net.dll
 C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\LuceneController\obj\Debug\LuceneController.exe
 C:\Users\Vitor\Desktop\Nova pasta\Social Mobility Recommender\LuceneController\obj\Debug\LuceneController.pdb
+C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\LuceneController\bin\Debug\LuceneController.exe.config
+C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\LuceneController\bin\Debug\LuceneController.exe
+C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\LuceneController\bin\Debug\LuceneController.pdb
+C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\LuceneController\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\LuceneController\bin\Debug\Lucene.Net.dll
+C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\LuceneController\obj\Debug\LuceneController.exe
+C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\LuceneController\obj\Debug\LuceneController.pdb
