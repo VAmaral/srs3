@@ -18,13 +18,18 @@ namespace SocialNetwork.Models
     public static class ControlModule
     {
 
+
+        public static LinkedList<string> log = new LinkedList<string>();
+
        
         public static void PeriodicMaintenance() {
                        
              Task t= new Task(()=>{
-
+                log.AddLast("Entrei na manutenção periodica");
                 Dictionary<string, HtmlNode> crawled = AbotCrawler.Crawler.RunToLucene();
+                log.AddLast("Terminei o crawling");
                 LuceneController.LuceneUsage.TreatMultiUrl(crawled);
+                log.AddLast("Terminei o indexamento");
                 DatabaseUpdate();
 
              });
@@ -39,6 +44,7 @@ namespace SocialNetwork.Models
            Task t= new Task(()=>{
             
                 RepositoryLocator.GetRepository().SearchLuceneDatabase();
+                log.AddLast("Terminei o update aos utilizadores");
                 DispatchEmails();
             
             });
@@ -55,6 +61,7 @@ namespace SocialNetwork.Models
 
                 foreach (string email in emails_newUrls.Keys)
                     SendEmail(email, emails_newUrls[email]);
+                log.AddLast("Enviei os emails");
 
             });
             t.Start();

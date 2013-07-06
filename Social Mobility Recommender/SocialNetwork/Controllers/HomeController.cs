@@ -70,5 +70,13 @@ namespace SocialNetwork.Controllers
             return RedirectToAction("Profile");
         
         }
+
+
+        public ActionResult Log() {
+
+            ViewData["log"] = ControlModule.log;
+            return View();
+        }
+
     }
 }

@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Log";
+}
+
+<h2>Log</h2>
+
+@foreach(string item in (@ViewData["log"]as LinkedList<string>)){
+    <li>
+        <p>"@item"</p>
+    </li>
+}
+
