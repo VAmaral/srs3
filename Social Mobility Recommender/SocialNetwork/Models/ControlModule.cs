@@ -19,7 +19,7 @@ namespace SocialNetwork.Models
     {
 
 
-        public static LinkedList<string> log = new LinkedList<string>();
+        public static LinkedList<string> log = LuceneController.LuceneUsage.Log;
 
        
         public static void PeriodicMaintenance() {

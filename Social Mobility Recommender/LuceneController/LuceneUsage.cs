@@ -18,10 +18,15 @@ using System.Windows;
 
 
 
+
 namespace LuceneController
 {
     public class LuceneUsage
     {
+
+        public static LinkedList<string> Log= new LinkedList<string>();
+
+
         public static BrazilianAnalyzer brazilAnalyzer = new BrazilianAnalyzer(Lucene.Net.Util.Version.LUCENE_30);
         public static StandardAnalyzer englishAnalyzer = new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30);
         public static string basePath;
@@ -33,10 +38,12 @@ namespace LuceneController
 
             if (files == null) return;
 
-            foreach (string url in files.Keys) 
-
+            foreach (string url in files.Keys)
+            {
+                
                 TreatAUrl(files[url], url);
-            
+                Log.AddLast("tratei do url:" + url);
+            }
             
         
         }
