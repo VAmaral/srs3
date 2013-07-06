@@ -39,7 +39,7 @@ namespace AbotCrawler
                                 MinAvailableMemoryRequiredInMb = 0,
                                 MaxMemoryUsageInMb = 200,
                                 MaxMemoryUsageCacheTimeInSeconds = 2,
-                                MaxCrawlDepth = 10,
+                                MaxCrawlDepth = 1,
                                 IsRespectRobotsDotTextEnabled = true
                             };
         }

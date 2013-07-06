@@ -55,3 +55,4 @@ C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\AbotCrawler\bin
 C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\AbotCrawler\bin\Debug\Robots.dll
 C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\AbotCrawler\obj\Debug\AbotCrawler.exe
 C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\AbotCrawler\obj\Debug\AbotCrawler.pdb
+C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\AbotCrawler\obj\Debug\AbotCrawler.csprojResolveAssemblyReference.cache
