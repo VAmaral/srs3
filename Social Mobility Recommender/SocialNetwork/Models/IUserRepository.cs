@@ -17,8 +17,8 @@ namespace SocialNetwork.Models
          Dictionary<string, LinkedList<int>> GetAllTerms(bool isEnglish);
          LinkedList<string> CollectTerms(LinkedList<string> terms, LinkedList<string> userTerms);
          void SearchLuceneDatabase(bool isEnglish);
-         Dictionary<string, LinkedList<string>> updateUsers();
-         IEnumerable<string> FindTerms(string[] terms); 
+         Dictionary<string, Dictionary<string, string>> updateUsers();
+        Dictionary<string,string> FindTerms(string[] terms); 
          void SearchLuceneDatabase();
     }
 }

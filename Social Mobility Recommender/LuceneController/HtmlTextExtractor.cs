@@ -18,19 +18,31 @@ namespace LuceneController
         {
             HtmlDocument document = new HtmlDocument();
             document.Load(new MemoryStream(File.ReadAllBytes(path)));
-            Console.WriteLine(ExtractViewableTextCleaned(document.DocumentNode));
+            string title;
+            Console.WriteLine(ExtractViewableTextCleaned(document.DocumentNode, out title));
         }
 
-        public static string ExtractViewableTextCleaned(HtmlNode root)
+        public static string ExtractTitle(HtmlNode root) {
+
+            return root.Attributes["title"].Value;
+        
+        
+        }
+
+
+        public static string ExtractViewableTextCleaned(HtmlNode root, out string title)
         {
+            title = "";
             var chunks = new List<string>();
 
             foreach (var item in root.DescendantsAndSelf())
             {
+                if (item.Name.Equals("title")) title = item.InnerText.Trim();
                 if (item.NodeType == HtmlNodeType.Text)
                 {
                     if (item.InnerText.Trim() != "")
                     {
+                        
                         chunks.Add(item.InnerText.Trim());
                     }
                 }
@@ -53,6 +65,7 @@ namespace LuceneController
 
         public static string ExtractViewableText(HtmlNode node)
         {
+
             StringBuilder sb = new StringBuilder();
             ExtractViewableTextHelper(sb, node);
             return sb.ToString();

@@ -44,9 +44,9 @@ namespace LuceneController
 
 
         public static void TreatAUrl(HtmlNode info, string url ) {
-
-            string text = HtmlTextExtractor.ExtractViewableTextCleaned(info);
-            Arquive(text,url,IsEnglish(text));
+            string title;
+            string text = HtmlTextExtractor.ExtractViewableTextCleaned(info, out title);
+            Arquive(text, title,url,IsEnglish(text));
 
         
         }
@@ -88,7 +88,7 @@ namespace LuceneController
             return y < x;    
         }
 
-        public static void Arquive(string text, string url, bool isEnglish)
+        public static void Arquive(string text, string title, string url, bool isEnglish)
         {
             
 
@@ -98,12 +98,14 @@ namespace LuceneController
             Object _mon= isEnglish? _monEn : _monPt;
             InitPathAndAnalyzer(out directory, out analyzer, isEnglish);
                       
-            //CRIAR UM NOVO DOCUMENTO COM A INFORMAÇÃO NECESSÁRIA: UM CAMPO COM O URL E UM OUTRO COM O CONTEUDO A ANALIZAR
+            //CRIAR UM NOVO DOCUMENTO COM A INFORMAÇÃO NECESSÁRIA
             string hash= text.GetHashCode().ToString();
             Document document = new Document();
-            document.Add(new Field("url", url, Field.Store.YES,Field.Index.NOT_ANALYZED));
-            document.Add(new Field("text", text, Field.Store.NO, Field.Index.ANALYZED));
-            document.Add(new Field("hash",hash, Field.Store.YES, Field.Index.NOT_ANALYZED));
+            document.Add(new Field("title", title,  Field.Store.YES,    Field.Index.NOT_ANALYZED));
+            document.Add(new Field("url",   url,    Field.Store.YES,    Field.Index.NOT_ANALYZED));
+            document.Add(new Field("text",  text,   Field.Store.NO,     Field.Index.ANALYZED));
+            document.Add(new Field("hash",  hash,   Field.Store.YES,    Field.Index.NOT_ANALYZED));
+            
                       
             Monitor.Enter(_mon);
             Lucene.Net.Store.Directory dir = Lucene.Net.Store.FSDirectory.Open(new DirectoryInfo(directory));
@@ -125,8 +127,6 @@ namespace LuceneController
             ScoreDoc[] hits = isearcher.Search(query, null, 1000).ScoreDocs;
             if(hits.Length>0){
                  Document doc = isearcher.Doc(hits[0].Doc);
-
-                 //Console.WriteLine(doc.Get("url"));
 
                 //É IGUAL
                  if (doc.Get("hash").Equals(hash))
@@ -150,7 +150,7 @@ namespace LuceneController
             Monitor.Exit(_mon);           
         }
 
-        public static void Arquive(string text, string url) { Arquive(text, url, IsEnglish(text)); }
+        public static void Arquive(string text, string title, string url) { Arquive(text, title, url, IsEnglish(text)); }
 
         public static void InitPathAndAnalyzer(out string directory, out Analyzer analyzer, bool english)
         {
@@ -168,7 +168,7 @@ namespace LuceneController
             }
         }
 
-        public static LinkedList<string> FindTerm(string term, bool english)
+        public static Dictionary<string, string> FindTerm(string term, bool english)
         {
 
            
@@ -199,23 +199,24 @@ namespace LuceneController
             int s= isearcher.IndexReader.NumDocs();
             ScoreDoc[] hits = isearcher.Search(query, null, 1000).ScoreDocs;
 
-           // if (hits.Length == 0) return null;
-            LinkedList<string> result = new LinkedList<string>();
+            Dictionary<string, string> result = new Dictionary<string, string>();
+            
 
             for (int i = 0; i < hits.Length;++i)
             {
                 Document doc = isearcher.Doc(hits[i].Doc);
-                result.AddLast(doc.Get("url"));
+                if(result.ContainsKey(doc.Get("url")))continue;
+                result.Add(doc.Get("url"), doc.Get("title"));
             }
             isearcher.Dispose();
             return result;
 
         }
 
-        public static LinkedList<string>[] FindTerms(string[] terms, bool english)
-        { 
-        
-            LinkedList<string>[] result= new LinkedList<string>[terms.Length];
+        public static Dictionary<string, string>[] FindTerms(string[] terms, bool english)
+        {
+
+            Dictionary<string, string>[] result = new Dictionary<string, string>[terms.Length];
             for (int i = 0; i < terms.Length; ++i) {
                 result[i] = FindTerm(terms[i], english);
             }

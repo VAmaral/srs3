@@ -18,39 +18,9 @@ namespace SocialNetwork.Models
     public static class ControlModule
     {
 
-        //public static class Email
-        //{
-
-
-
-        //    public static void sendEmail(string email, string title, string body)
-        //    {
-        //        WebMail.Send(email, title, body);
-        //    }
-
-
-        //}
-
-        public static Thread ad_infinitum = new Thread(()=>
-            {
-                LuceneUsage.TreatMultiUrl(AbotCrawler.Crawler.RunToLucene());
-                
-            
-            
-            
-            
-            
-            });
-
-
-        
-
+       
         public static void PeriodicMaintenance() {
-
-           
-
-
-            //Thread background = new Thread(() => {
+                       
              Task t= new Task(()=>{
 
                 Dictionary<string, HtmlNode> crawled = AbotCrawler.Crawler.RunToLucene();
@@ -60,8 +30,6 @@ namespace SocialNetwork.Models
              });
              t.Start();
 
-            //});
-            //background.Start();  
           
         }
 
@@ -71,76 +39,53 @@ namespace SocialNetwork.Models
            Task t= new Task(()=>{
             
                 RepositoryLocator.GetRepository().SearchLuceneDatabase();
-                Dictionary<string, LinkedList<string>> emails_newUrls = RepositoryLocator.GetRepository().updateUsers();
+                DispatchEmails();
+            
+            });
+            t.Start();
+
+        
+        }
+
+        public static void DispatchEmails() {
+
+            Task t = new Task(() =>
+            {                
+                Dictionary<string, Dictionary<string, string>> emails_newUrls = RepositoryLocator.GetRepository().updateUsers();
 
                 foreach (string email in emails_newUrls.Keys)
                     SendEmail(email, emails_newUrls[email]);
-            
+
             });
-            t.RunSynchronously();
-
-            //    RepositoryLocator.GetRepository().SearchLuceneDatabase();
-            //    Dictionary<string, LinkedList<string>> emails_newUrls = RepositoryLocator.GetRepository().updateUsers();
-
-            //    foreach (string email in emails_newUrls.Keys)
-            //        SendEmail(email, emails_newUrls[email]);
-
-            //});
-            //background.Start();  
-        
+            t.Start();
         
         }
-       
 
-       
-        public static void SendEmail(string email, LinkedList<string> urls) {
+
+
+        public static void SendEmail(string email, Dictionary<string, string> urls)
+        {
 
             string body= "";
 
-            foreach(string url in urls){
-            body=body + "<a href=" + url + ">" + url +"</a>"+"<br>";
-            }
+            foreach(string url in urls.Keys){body += "<a href=" + url + ">" + urls[url] +"</a>"+"<br>";}
 
             MailMessage mm = new MailMessage(new MailAddress("socialmobilityrecommender@gmail.com"), new MailAddress(email));
-
             mm.Subject = " Social Mobility Recommender: New urls for you to explore";
-
             mm.Body = body;
-
             mm.IsBodyHtml = true;
 
             SmtpClient smtp = new SmtpClient();
-
             smtp.Host = "smtp.gmail.com";
-
             smtp.EnableSsl = true;
-
             System.Net.NetworkCredential NetworkCred = new System.Net.NetworkCredential();
-
             NetworkCred.UserName = "socialmobilityrecommender@gmail.com";
-
             NetworkCred.Password = "travelalong";
-
             smtp.UseDefaultCredentials = true;
-
             smtp.Credentials = NetworkCred;
-
             smtp.Port = 587;
-
-            smtp.Send(mm);
-
-            //WebMail.SmtpServer = "smtp.gmail.com";
-            //WebMail.SmtpPort = 587;
-            //WebMail.EnableSsl = true;
-            //WebMail.UserName = "socialmobilityrecommender@gmail.com";
-            //WebMail.Password = "travelalong";
-            //WebMail.From = "socialmobilityrecommender@gmail.com";
-            //Email.sendEmail(email, " Social Mobility Recommender: New urls for you to explore", body);
-        
+            smtp.Send(mm);                      
         
         }
-
-
-
     }
 }

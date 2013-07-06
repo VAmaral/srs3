@@ -14,12 +14,7 @@ namespace SocialNetwork.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
-        {
-            
-
-            return View();
-        }
+        public ActionResult Index(){return View();}
 
         public ActionResult SimulateTotal() {
 
@@ -27,40 +22,29 @@ namespace SocialNetwork.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult EmailDispatch() {
+
+            ControlModule.DispatchEmails();
+            return RedirectToAction("Index");
+        }
+
+
 
         public ActionResult Simulate() {
 
             ControlModule.DatabaseUpdate();
-            return RedirectToAction("Index");
-            
-        
+            return RedirectToAction("Index");       
         }
 
-        public ActionResult About()
-        {
 
-            return RedirectToAction("Index");
-            
-        }
-
-        public ActionResult Contact()
-        {
-            
-
-            return RedirectToAction("Index");
-        }
-
-        public ActionResult Search() {
+        public ActionResult Search() { return View(); }
 
 
-            return View();
-        
-        }
         [HttpPost]
         public ActionResult BeginSearch(string term) {
 
             string[] terms = term.Split(' ');
-            IEnumerable<string> result= RepositoryLocator.GetRepository().FindTerms(terms);
+            Dictionary<string,string> result= RepositoryLocator.GetRepository().FindTerms(terms);
             ViewData["list"]= result;
             return View();
         }
@@ -74,6 +58,8 @@ namespace SocialNetwork.Controllers
 
             return View(RepositoryLocator.GetRepository().GetUser(id));
         }
+
+
         [HttpPost]
         public ActionResult ChangeTerms(int id, string terms) {
             LinkedList<string> newTermList = new LinkedList<string>();

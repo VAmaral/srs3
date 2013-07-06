@@ -54,3 +54,4 @@ C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\LuceneControlle
 C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\LuceneController\bin\Debug\Lucene.Net.dll
 C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\LuceneController\obj\Debug\LuceneController.exe
 C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\LuceneController\obj\Debug\LuceneController.pdb
+C:\Users\Vitor\Documents\GitHub\srs3\Social Mobility Recommender\LuceneController\obj\Debug\LuceneController.csprojResolveAssemblyReference.cache

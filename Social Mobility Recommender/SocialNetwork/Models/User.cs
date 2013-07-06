@@ -12,17 +12,17 @@ namespace SocialNetwork.Models
         public string _email;
         public int _id;
         LinkedList<string> terms;
-        LinkedList<string> oldUrl;
+        Dictionary<string, string> oldUrl;
         public bool _isEnglish;
-        LinkedList<string> newUrl;
+        Dictionary<string, string> newUrl;
 
 
         public User(string name, string email, int id, bool isEnglish) {
             _name = name;
             _email = email;
             terms = new LinkedList<string>();
-            oldUrl = new LinkedList<string>();
-            newUrl = new LinkedList<string>();
+            oldUrl = new Dictionary<string, string>();
+            newUrl = new Dictionary<string, string>();
             _isEnglish = isEnglish;
         }
 
@@ -32,22 +32,22 @@ namespace SocialNetwork.Models
 
         public LinkedList<string> GetAllTerms() { return terms; }
 
-        public void TryAddUrl(string url) { if(!oldUrl.Contains(url))newUrl.AddLast(url);}
+        public void TryAddUrl(string url, string title) { if(!oldUrl.ContainsKey(url))newUrl.Add(url, title);}
 
-        public void tryAddMultiUrl(LinkedList<string> urls) { 
+        public void tryAddMultiUrl(Dictionary<string,string> urls) { 
 
             if (urls==null) return;
-            foreach (string url in urls) TryAddUrl(url); 
+            foreach (string url in urls.Keys) TryAddUrl(url, urls[url]); 
         }
 
-        public LinkedList<string> UpdateUser() {
+        public Dictionary<string,string> UpdateUser() {
 
-            LinkedList<string> result = new LinkedList<string>();
+            Dictionary<string, string> result = new Dictionary<string, string>();
 
-            foreach (string url in newUrl)
+            foreach (string url in newUrl.Keys)
             {
-                result.AddLast(url);
-                oldUrl.AddLast(url);
+                result.Add(url, newUrl[url]);
+                oldUrl.Add(url, newUrl[url]);
             }
             newUrl.Clear();
             return result;

@@ -85,7 +85,7 @@ namespace SocialNetwork.Models
             //dictionary<term, users that have that term in preferences>
             Dictionary<string, LinkedList<int>> terms = GetAllTerms(isEnglish);
             //dictionary<term, urls that have that term>
-            Dictionary<string, LinkedList<string>> results = new Dictionary<string, LinkedList<string>>();
+            Dictionary<string, Dictionary<string, string>> results = new Dictionary<string, Dictionary<string, string>>();
             //dictionary<user id, terms in profile>
             Dictionary<int, LinkedList<string>> userTerms = GetAllUserTerms(isEnglish);
 
@@ -98,12 +98,12 @@ namespace SocialNetwork.Models
             foreach (int id in userTerms.Keys)
             {
                 //Ensuring that the same url contains all the keywords that the user wanted
-                
-                LinkedList<string> final=null;
+
+                Dictionary<string, string> final = null;
                 foreach (string term in userTerms[id]) {
                     if (final == null) final = results[term];
                     if (results[term] == null) continue;
-                    final.Intersect<string>(results[term]);
+                    final.Intersect(results[term]);
                 
                 }
 
@@ -121,28 +121,30 @@ namespace SocialNetwork.Models
             SearchLuceneDatabase(false);
         }
 
-        public IEnumerable<string> FindTerm(string term) {
+        public Dictionary<string,string> FindTerm(string term) {
 
             return LuceneUsage.FindTerm(term, false);
         
         
         }
 
-        public IEnumerable<string> FindTerms(string[] terms) {
+        public Dictionary<string,string> FindTerms(string[] terms) {
 
-            IEnumerable<string> result = FindTerm(terms[0]);
+            Dictionary<string,string> result = FindTerm(terms[0]);
             for (int i = 1; i < terms.Length; ++i) {
-                result = result.Intersect<string>(FindTerm(terms[i]));
+               
+                result = result.Where(x => FindTerm(terms[i]).ContainsKey(x.Key))
+                         .ToDictionary(x => x.Key, x => x.Value);
+              
             }
 
             return result;
         }
 
 
-        public Dictionary<string, LinkedList<string>> updateUsers() {
+        public Dictionary<string, Dictionary<string,string>> updateUsers() {
 
-            Dictionary<string, LinkedList<string>> emails_urls = new Dictionary<string, LinkedList<string>>();
-
+            Dictionary<string, Dictionary<string, string>> emails_urls = new Dictionary<string, Dictionary<string, string>>();
             foreach (int id in users.Keys)
                 emails_urls.Add(users[id]._email, users[id].UpdateUser());
             
