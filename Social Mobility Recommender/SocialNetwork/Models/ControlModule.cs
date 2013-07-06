@@ -30,7 +30,15 @@ namespace SocialNetwork.Models
                 log.AddLast("Terminei o crawling");
                 LuceneController.LuceneUsage.TreatMultiUrl(crawled);
                 log.AddLast("Terminei o indexamento");
-                DatabaseUpdate();
+                //DatabaseUpdate();
+
+                RepositoryLocator.GetRepository().SearchLuceneDatabase();
+                log.AddLast("Terminei o update aos utilizadores");
+                Dictionary<string, Dictionary<string, string>> emails_newUrls = RepositoryLocator.GetRepository().updateUsers();
+                foreach (string email in emails_newUrls.Keys)
+                SendEmail(email, emails_newUrls[email]);
+                log.AddLast("Enviei os emails");
+                
 
              });
              t.Start();
@@ -45,7 +53,13 @@ namespace SocialNetwork.Models
             
                 RepositoryLocator.GetRepository().SearchLuceneDatabase();
                 log.AddLast("Terminei o update aos utilizadores");
-                DispatchEmails();
+                //DispatchEmails();
+
+                Dictionary<string, Dictionary<string, string>> emails_newUrls = RepositoryLocator.GetRepository().updateUsers();
+
+                foreach (string email in emails_newUrls.Keys)
+                    SendEmail(email, emails_newUrls[email]);
+                log.AddLast("Enviei os emails");
             
             });
             t.Start();
@@ -56,7 +70,7 @@ namespace SocialNetwork.Models
         public static void DispatchEmails() {
 
             Task t = new Task(() =>
-            {                
+            {
                 Dictionary<string, Dictionary<string, string>> emails_newUrls = RepositoryLocator.GetRepository().updateUsers();
 
                 foreach (string email in emails_newUrls.Keys)
